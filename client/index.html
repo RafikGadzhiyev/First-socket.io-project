@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Test
+    </title>
+    <!-- <%= htmlWebpackPlugin.options.title %> -->
+</head>
+
+<body>
+    <div class="content-container">
+        <div class="name-container">
+            <form class="name-container__name-form">
+                <h1>Test chat application</h1>
+                <input type="text" class="name-form__name-field" placeholder="Enter your name">
+                <button class="name-form__connect-button">Enter to the room</button>
+            </form>
+        </div>
+        <form class="content-container__message-form">
+            <input type="text" class="message-form__message-field" placeholder="type message">
+            <button class="message-form__send-button">Send</button>
+        </form>
+        <div class="content-container__messages-container">
+
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type='module' src='scripts/main.js'></script>
+</body>
+
+</html>
